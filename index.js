@@ -48,7 +48,7 @@ module.exports = function (runner) {
 					default :
 						append(util.format(
 							'		<testCase name="%s" duration="%d">',
-							espape(test.titleId), test.duration != undefined ? test.duration : 0
+							espape(test.titleId), test.duration != undefined ? test.duration : 1
 						));
 						switch(test.state){
 							case 'failed':
